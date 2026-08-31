@@ -1,124 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masjid Al-Hana — Soft Islamic</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masjid Al-Hanna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#e9a8bd;--deep:#a85d78;--cream:#fff8f0;--soft:#f9e7eb;--ink:#493b3d;--white:#fffdf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream)}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,248,240,.9);backdrop-filter:blur(12px);border-bottom:1px solid #f1dce0}
+.navin{max-width:1100px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Playfair Display";font-size:22px;color:var(--deep)}.logo span{font-size:14px}
+nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-size:14px;font-weight:600}
+.hero{min-height:82vh;display:grid;place-items:center;padding:70px 24px;background:radial-gradient(circle at 85% 15%,#f5cbd7 0 9%,transparent 10%),radial-gradient(circle at 10% 80%,#f7e1d6 0 12%,transparent 13%),linear-gradient(135deg,#fff8f0,#fdecef)}
+.hero-card{max-width:1100px;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#f6d8e1;color:var(--deep);padding:8px 14px;border-radius:99px;font-size:13px;font-weight:700}
+h1{font-family:"Playfair Display";font-size:clamp(48px,8vw,86px);line-height:.98;margin:18px 0;color:#875064}
+.hero p{font-size:18px;line-height:1.7;max-width:560px;color:#6c5a5d}
+.btn{display:inline-block;margin-top:12px;padding:13px 20px;border-radius:14px;background:var(--deep);color:white;text-decoration:none;font-weight:700;box-shadow:0 8px 20px #a85d7830}
+.mosque{height:380px;border-radius:38px;background:linear-gradient(145deg,#f8dce4,#fffaf4);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 20px 50px #9d647325}
+.mosque:before{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:#efb5c8;top:70px;left:50%;transform:translateX(-50%)}
+.dome{position:absolute;top:112px;width:175px;height:120px;background:#fffaf4;border-radius:90px 90px 12px 12px;border:6px solid #d99aaf}
+.base{position:absolute;top:215px;width:220px;height:105px;background:#fffaf4;border-radius:12px;border:6px solid #d99aaf}
+.min1,.min2{position:absolute;top:145px;width:30px;height:170px;background:#fffaf4;border:5px solid #d99aaf;border-radius:15px}
+.min1{left:45px}.min2{right:45px}.cres{position:absolute;top:78px;font-size:34px;color:#a85d78;z-index:2}
+section{max-width:1100px;margin:auto;padding:80px 24px}h2{font-family:"Playfair Display";font-size:42px;text-align:center;color:#875064;margin:0 0 12px}section>p{text-align:center;color:#766669;margin:0 auto 35px;max-width:650px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--white);border:1px solid #f0dfe1;border-radius:24px;padding:28px;box-shadow:0 12px 30px #8c5d6a12}.icon{font-size:30px}.card h3{margin:14px 0 8px;color:#875064}.card p{line-height:1.65;color:#766669}
+.schedule{background:#f8e4e8;border-radius:28px;padding:35px}.times{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.time{background:#fffaf4;border-radius:18px;padding:18px;text-align:center}.time b{display:block;color:#a85d78;font-size:18px;margin-top:7px}
+.quote{background:#fffaf4;border:1px solid #efdadd;border-radius:28px;padding:45px;text-align:center}.quote p{font-family:"Playfair Display";font-size:26px;color:#875064}
+footer{text-align:center;padding:40px 24px;background:#f5dfe5;color:#765e63}
+@media(max-width:800px){.hero-card{grid-template-columns:1fr}.mosque{height:300px}.grid{grid-template-columns:1fr}.times{grid-template-columns:1fr 1fr}nav a{margin-left:10px;font-size:12px}.navlinks{display:none}}
+</style>
 </head>
 <body>
-<header class="navbar">
-  <a class="brand" href="#beranda"><span class="brand-mark">🕌</span><span>Masjid Al-Hana</span></a>
-  <nav>
-    <a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#jadwal">Jadwal</a>
-    <a href="#kegiatan">Kegiatan</a><a href="#donasi">Donasi</a><a href="#kontak">Kontak</a>
-  </nav>
+<nav><div class="navin"><div class="logo">🕌 Masjid Al-Hanna <span>♡</span></div><div class="navlinks"><a href="#tentang">Tentang</a><a href="#jadwal">Jadwal</a><a href="#kegiatan">Kegiatan</a></div></div></nav>
+
+<header class="hero">
+<div class="hero-card">
+<div>
+<span class="badge">♡ A warm place to pray & grow</span>
+<h1>Masjid<br>Al-Hanna</h1>
+<p>Ruang ibadah yang hangat, damai, dan penuh kasih. Mari bersama menumbuhkan hati yang dekat dengan Allah dan sesama.</p>
+<a class="btn" href="#tentang">Kenali Masjid Kami →</a>
+</div>
+<div class="mosque" aria-label="Ilustrasi masjid"><span class="cres">☾</span><div class="dome"></div><div class="base"></div><div class="min1"></div><div class="min2"></div></div>
+</div>
 </header>
 
-<main>
-<section id="beranda" class="hero section-frame">
-  <div class="crescent">☾</div>
-  <div class="stars">✦　·　✧</div>
-  <div class="hero-copy">
-    <p class="arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-    <p class="eyebrow">SELAMAT DATANG DI</p>
-    <h1>MASJID<br><span>AL-HANA</span></h1>
-    <p class="lead">Tempat bertumbuh dalam<br>iman, ilmu, dan kebaikan.</p>
-    <div class="actions">
-      <a class="btn primary" href="#jadwal">JADWAL SHOLAT</a>
-      <a class="btn ghost" href="#tentang">TENTANG MASJID</a>
-    </div>
-  </div>
-  <div class="mosque-art hero-mosque">
-    <div class="dome dome-main"></div><div class="dome dome-left"></div><div class="dome dome-right"></div>
-    <div class="minaret left"><i></i></div><div class="minaret right"><i></i></div>
-    <div class="mosque-body"><div class="arch"><span></span></div><div class="windows"><b></b><b></b><b></b></div></div>
-    <div class="flowers f1">✿</div><div class="flowers f2">✿</div><div class="flowers f3">✿</div>
-  </div>
-  <div class="hero-bottom">Tempat Pulang • Tempat Beribadah • Tempat Berbagi</div>
+<section id="tentang">
+<h2>Selamat Datang ♡</h2>
+<p>Masjid Al-Hanna hadir sebagai tempat ibadah sekaligus ruang bertumbuh bagi keluarga dan masyarakat.</p>
+<div class="grid">
+<div class="card"><div class="icon">🌷</div><h3>Nyaman & Ramah</h3><p>Suasana lembut dan tenang untuk membantu setiap jamaah merasa diterima.</p></div>
+<div class="card"><div class="icon">📖</div><h3>Belajar Bersama</h3><p>Kajian dan kegiatan keislaman untuk menambah ilmu dengan cara yang menyenangkan.</p></div>
+<div class="card"><div class="icon">🤍</div><h3>Peduli Sesama</h3><p>Membangun kepedulian melalui kegiatan sosial dan kebersamaan warga.</p></div>
+</div>
 </section>
 
-<section id="tentang" class="content-section">
-  <div class="section-heading"><span>TENTANG KAMI</span><div>❧</div></div>
-  <div class="about-grid">
-    <div>
-      <p class="kicker">SEJARAH MASJID</p>
-      <p>Masjid Al-Hana hadir sebagai ruang ibadah dan kegiatan umat yang hangat, nyaman, dan terbuka bagi masyarakat.</p>
-      <p class="kicker">VISI</p>
-      <p>Menjadi masjid yang makmur, berdaya guna, dan menebar manfaat bagi umat.</p>
-      <p class="kicker">MISI</p>
-      <ul class="checks">
-        <li>Menyelenggarakan kegiatan keagamaan dan pendidikan.</li>
-        <li>Menjadi pusat pembinaan generasi Islam yang berakhlak mulia.</li>
-        <li>Meningkatkan kepedulian sosial dan kemanusiaan.</li>
-      </ul>
-    </div>
-    <div class="photo-card"><div class="mosque-mini"><div class="dome dome-main"></div><div class="minaret left"></div><div class="minaret right"></div><div class="mosque-body"><div class="arch"></div></div></div></div>
-  </div>
+<section id="jadwal">
+<h2>Jadwal Shalat</h2><p>Contoh tampilan jadwal — silakan ubah jam sesuai jadwal resmi masjid.</p>
+<div class="schedule"><div class="times">
+<div class="time">Subuh<b>04:45</b></div><div class="time">Dzuhur<b>12:05</b></div><div class="time">Ashar<b>15:25</b></div><div class="time">Maghrib<b>18:05</b></div><div class="time">Isya<b>19:15</b></div>
+</div></div>
 </section>
 
-<section id="jadwal" class="content-section schedule-bg">
-  <div class="section-heading"><span>JADWAL SHOLAT</span><div>❧</div></div>
-  <p class="date">Hari ini, 25 Mei 2025</p>
-  <div class="schedule-card">
-    <div><span class="sun">☼</span><strong>SUBUH</strong><time>04:28</time></div>
-    <div><span class="sun">☼</span><strong>DZUHUR</strong><time>12:05</time></div>
-    <div><span class="sun">☼</span><strong>ASHAR</strong><time>15:23</time></div>
-    <div><span class="sun">◐</span><strong>MAGHRIB</strong><time>17:45</time></div>
-    <div><span class="sun">☾</span><strong>ISYA</strong><time>19:02</time></div>
-  </div>
-  <div class="silhouette">☁︎　🕌　☁︎</div>
+<section id="kegiatan">
+<h2>Kegiatan Masjid</h2><p>Program sederhana yang bisa menjadi bagian dari kehidupan Masjid Al-Hanna.</p>
+<div class="grid">
+<div class="card"><div class="icon">🌙</div><h3>Kajian Pekanan</h3><p>Waktu untuk menyegarkan hati dan memperdalam pemahaman agama.</p></div>
+<div class="card"><div class="icon">🧸</div><h3>Madrasah Anak</h3><p>Belajar Al-Qur'an dan adab dengan suasana ceria dan penuh kasih.</p></div>
+<div class="card"><div class="icon">🎁</div><h3>Berbagi Berkah</h3><p>Gerakan berbagi makanan dan bantuan untuk warga yang membutuhkan.</p></div>
+</div>
 </section>
 
-<section id="kegiatan" class="content-section">
-  <div class="section-heading"><span>KEGIATAN</span><div>❧</div></div>
-  <div class="activity-grid">
-    <article><div class="activity-icon">📖</div><h3>KAJIAN ISLAM</h3><p>Kajian rutin untuk menambah ilmu dan memperkuat iman.</p></article>
-    <article><div class="activity-icon">📕</div><h3>TAHFIDZ QUR'AN</h3><p>Program menghafal Al-Qur'an untuk anak-anak dan dewasa.</p></article>
-    <article><div class="activity-icon">🧕</div><h3>PENGAJIAN</h3><p>Pengajian rutin untuk ibu-ibu dan remaja muslimah.</p></article>
-    <article><div class="activity-icon">♡</div><h3>SANTUNAN</h3><p>Berbagi kepada yang membutuhkan setiap bulan.</p></article>
-  </div>
+<section>
+<div class="quote"><p>“Maka ingatlah Aku, niscaya Aku akan mengingatmu.”</p><small>QS. Al-Baqarah: 152</small></div>
 </section>
 
-<section class="content-section quote-section">
-  <div class="crescent small">☾</div>
-  <div class="quote-box">
-    <div class="quote-mark">“</div>
-    <blockquote>Ingatlah, hanya dengan<br>ingat kepada Allah hati<br>menjadi tenteram.</blockquote>
-    <cite>(QS. Ar-Ra'd: 28)</cite>
-  </div>
-  <div class="silhouette">🕌</div>
-</section>
-
-<section id="lokasi" class="content-section">
-  <div class="section-heading"><span>LOKASI MASJID</span><div>❧</div></div>
-  <div class="location-grid">
-    <div class="address"><p>Jl. Nurul Iman No. 123</p><p>Desa Harapan, Kec. Sejahtera</p><p>Kota Bahagia, 12345</p><span class="pin">●</span></div>
-    <div class="map"><div class="road r1"></div><div class="road r2"></div><div class="park"></div><div class="map-pin">♥<small>Masjid Al-Hana</small></div></div>
-  </div>
-  <a class="btn primary centered" href="https://maps.google.com" target="_blank">BUKA DI GOOGLE MAPS</a>
-</section>
-
-<section id="donasi" class="content-section donation-section">
-  <div class="section-heading"><span>DONASI</span><div>❧</div></div>
-  <p class="donation-intro">Bantu kami dalam pembangunan<br>dan kegiatan Masjid Al-Hana.<br>Setiap kebaikan Anda adalah investasi akhirat.</p>
-  <div class="donation-box"><div class="heart">♡</div><div class="donation-lid"></div><div class="donation-body"></div></div>
-  <a class="btn primary" href="#donasi-info">DONASI SEKARANG</a>
-  <div id="donasi-info" class="bank"><b>REKENING DONASI</b><br>BSI &nbsp; 1234 5678 9012 3456<br>a.n. Masjid Al-Hana</div>
-</section>
-</main>
-
-<footer id="kontak">
-  <div class="footer-brand">🕌 <span>Masjid Al-Hana</span></div>
-  <p>Tempat bertumbuh dalam iman,<br>ilmu, dan kebaikan.</p>
-  <div class="footer-cols">
-    <div><h4>KONTAK</h4><p>☎ 0812-3456-7890</p><p>✉ info@masjidalhana.or.id</p><p>🌐 www.masjidalhana.or.id</p><p>⌖ Jl. Nurul Iman No. 123<br>Kota Bahagia, 12345</p></div>
-    <div><h4>IKUTI KAMI</h4><p>f &nbsp; Masjid Al-Hana</p><p>◎ &nbsp; @masjidalhana</p><p>▶ &nbsp; @masjidalhana</p></div>
-  </div>
-  <small>© 2025 Masjid Al-Hana. All rights reserved.</small>
-</footer>
+<footer>♡ Masjid Al-Hanna · Soft Pink & Cream Islamic Display ♡<br><small>© 2026 — Made with love</small></footer>
 </body>
 </html>
